@@ -16,45 +16,77 @@ html, body {
 .navbar{
   background:#000;
   color: rgb(255, 255, 255);
+  border-bottom: #0097d8 solid 2px;
 }
 
 .intro{
-	height: 70%;
+	height: 100%;
 	width: 100%;
-    padding: 0px;
-    color: white;
-    background: url('../IMG/BG.jpg');
-    text-align: center;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  color: white;
+  background: url('../IMG/BG.jpg');
+  text-align: center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #logo{
- height: 150px;
- width: 150px;
- margin-top: 100px;
+  height: 150px;
+  width: 150px;
+  margin-top: 100px;
+  margin-bottom: 20px
+}
+
+.intro h4{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 50px
 }
 
 #start-showdown-btn{
-    color: rgb(0, 0, 110);
+    color: rgb(0, 0, 192);
     text-decoration: none;
     font-size: 20px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
-    border: rgb(0, 0, 110) solid 2px;
+    border: rgb(0, 0, 192) solid 2px;
+    margin: 20px;
+    font-weight: bold;
+}
+#start-showdown-btn:hover{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgb(0, 0, 192);
+  padding: 10px;
+  border: white solid 2px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#join-showdown-btn{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+}
+#join-showdown-btn:hover{
+  color: rgb(109, 109, 255);
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
 }
 
 
 .showdown-list{
-  margin-top: 10em;
-  border-top: #33ccff solid 5px;
+  border-top: #3347ff solid 5px;
   background: #000;
-  margin-bottom: 50px;
   text-align: center;
+  height: fit-content;
+  padding-bottom: 100px;
+  color: white;
 }
 
 /*footer styles*/
@@ -75,10 +107,10 @@ footer p {
 }
 
 #org{
- text-transform: uppercase;
- color: #33ccff;
- font-family: Arial, Helvetica, sans-serif;
- font-size: .8em;
- margin-left: 0;
- margin-right: 3.5em;
+  text-transform: uppercase;
+  color: #33ccff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8em;
+  margin-left: 0;
+  margin-right: 3.5em;
 }
