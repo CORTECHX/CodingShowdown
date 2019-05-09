@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset = "UTF-8">
-	<title>Coding Showdown</title>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Live coding competitions">
+    <meta name="author" content="Cortechx">
+    <title>Coding Showdown</title>
+
+	<!-- Bootstrap core CSS -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="CSS/index_styles.css" rel="stylesheet">
+	<!--animations css-->
+	<link href="CSS/animate.min.css" rel="stylesheet">
+
+	<!--favicon-->
+    <link rel="icon" type="image/png" href="IMG/icon.png"/>
 </head>
 <body>
-	<h1>Coding Showdown!</h1>
+
+	<!--navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <div class="navbar-header">
+		  <a style="padding-top:15px; color:black;" class="navbar-brand">Coding Showdown</a>
+        </div>
+      </div>
+    </div><!--navbar end-->
+
+	<!--INTRODUCTION-->
+	<div class="intro">
+        <center>
+			<img id="logo" src="IMG/icon.png" alt="CS_logo"/>
+
+			<h4 style="color:black;font-family:aero;"> Dare To Challenge </h4>
+
+			<a href="">Start A Showdown!</a>
+        </center>
+    </div>
+
+	<!--List of ongoing showdowns-->
+	<div class="Showdown-list">
+        <p style="color:black;" class="header">LIVE MATCHES</p>
+         
+        <ul>
+			<li>put a div here with match info (eg. "mark vs john in python")</li>
+		</ul>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+      <p>2019 <br> Campion College Software Engineering Club</p>
+    </footer>
+
+	<!--bootstrap and JQuery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/index_script.js"></script>
+    <script type="text/javascript">
+      function scrollTo(id) {
+        $('html, body').animate({
+              scrollTop: $(id).offset().top
+            }, 'slow');
+        }
+    </script>
+
+
 </body>
 </html>
