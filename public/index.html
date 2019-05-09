@@ -3,7 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Coding Showdown</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="CSS/index_styles.css" rel="stylesheet">
+    <!--animations css-->
+    <link href="CSS/animate.min.css" rel="stylesheet">
+  
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="IMG/icon.png"/>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/6.0.1/firebase-app.js"></script>
@@ -16,6 +26,80 @@
     <script defer src="/__/firebase/init.js"></script>
   </head>
   <body>
+    
+    <!--navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+  
+        <div class="navbar-header">
+          <a style="color:white;" class="navbar-brand">Coding Showdown</a>
+        </div>
+      </div>
+    </div>
+    <!--navbar end-->
+
+    <!--INTRODUCTION-->
+    <div class="intro">
+      <center>
+        <img id="logo" src="IMG/BG.jpg" alt="CS_logo"/>
+
+          <h4> Dare To Challenge </h4>
+          
+          <ul>
+            <li style="display:inline"><a id="start-showdown-btn" href="">Create Showdown</a></li>
+            <li style="display:inline"><a id="join-showdown-btn" href="">Join A Showdown</a></li>
+          </ul>
+      
+      </center>
+    </div>
+
+    <!--List of ongoing showdowns-->
+    <div class="showdown-list">
+      <h3><span style ="color:red; font-weight: bold">LIVE</span> MATCHES</h3>
+        
+      <ul>
+        <li>put divs here with match info (eg. "mark vs john in python")</li>
+      </ul>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+      <p>2019 <br> Campion College Software Engineering Club</p>
+    </footer>
+
+    <!--bootstrap and JQuery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/index_script.js"></script>
+    <script type="text/javascript">
+      function scrollTo(id) {
+        $('html, body').animate({
+              scrollTop: $(id).offset().top
+            }, 'slow');
+        }
+    </script>
+  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD5DXytJcbpLVygmQsRVlmUpExV34cR5v8",
+        authDomain: "codingshowdown.firebaseapp.com",
+        databaseURL: "https://codingshowdown.firebaseio.com",
+        projectId: "codingshowdown",
+        storageBucket: "codingshowdown.appspot.com",
+        messagingSenderId: "270128114889",
+        appId: "1:270128114889:web:895c64241df23d49"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script src = "app.js">
     </script>
   </body>
