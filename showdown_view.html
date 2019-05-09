@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Live coding competitions">
+    <meta name="author" content="Cortechx">
+    <title>Coding Showdown</title>
+
+	<!-- Bootstrap core CSS -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="CSS/showdown_styles.css" rel="stylesheet">
+	<!--animations css-->
+	<link href="CSS/animate.min.css" rel="stylesheet">
+
+	<!--favicon-->
+    <link rel="icon" type="image/png" href="IMG/icon.png"/>
+</head>
+<body>
+
+	<!--navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <div class="navbar-header">
+		  <a style="color:white;" class="navbar-brand">LIVE |Coding Showdown</a>
+        </div>
+      </div>
+    </div><!--navbar end-->
+
+	<!--SCREEN VIEW-->
+	<div class="screen-view">
+        <br><br>
+        <video class="screen" width="490px" src="" controls>HTML5 Video not supported by your browser</video>
+        <br>
+        <h1 style="text-align:center">VS</h1>
+        <br>
+        <video class="screen" src="" controls>HTML5 Video not supported by your browser</video>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer>
+      <p>2019 <br> Campion College Software Engineering Club</p>
+    </footer>
+
+	<!--bootstrap and JQuery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/showdown_script.js"></script>
+    <script type="text/javascript">
+      function scrollTo(id) {
+        $('html, body').animate({
+              scrollTop: $(id).offset().top
+            }, 'slow');
+        }
+	</script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+		apiKey: "AIzaSyD5DXytJcbpLVygmQsRVlmUpExV34cR5v8",
+		authDomain: "codingshowdown.firebaseapp.com",
+		databaseURL: "https://codingshowdown.firebaseio.com",
+		projectId: "codingshowdown",
+		storageBucket: "codingshowdown.appspot.com",
+		messagingSenderId: "270128114889",
+		appId: "1:270128114889:web:895c64241df23d49"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	</script>
+
+
+</body>
+</html>

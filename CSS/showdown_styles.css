@@ -18,43 +18,15 @@ html, body {
   color: rgb(255, 255, 255);
 }
 
-.intro{
-	height: 70%;
-	width: 100%;
-    padding: 0px;
-    color: white;
-    background: url('../IMG/BG.jpg');
-    text-align: center;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.screen-view{
+    align-content: center;
+    align-self: center;
 }
-
-#logo{
- height: 150px;
- width: 150px;
- margin-top: 100px;
-}
-
-#start-showdown-btn{
-    color: rgb(0, 0, 110);
-    text-decoration: none;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border: rgb(0, 0, 110) solid 2px;
-}
-
-
-.showdown-list{
-  margin-top: 10em;
-  border-top: #33ccff solid 5px;
-  background: #000;
-  margin-bottom: 50px;
-  text-align: center;
+.screen{
+    width: 90%;
+    height: 60%;
+    border: white solid 2px;
+    margin: 20px;
 }
 
 /*footer styles*/
@@ -64,7 +36,6 @@ footer {
   right: 0px;
   bottom: 0px;
   width:100%;
-  position: fixed;
 }
 
 footer p {
