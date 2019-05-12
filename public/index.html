@@ -15,15 +15,6 @@
     <!--favicon-->
     <link rel="icon" type="image/png" href="IMG/icon.png"/>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/6.0.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/6.0.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/6.0.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/6.0.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.0.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
   </head>
   <body>
     
@@ -40,17 +31,14 @@
 
     <!--INTRODUCTION-->
     <div class="intro">
-      <center>
-        <img id="logo" src="IMG/BG.jpg" alt="CS_logo"/>
+      <img id="logo" src="IMG/BG.jpg" alt="CS_logo"/>
 
-          <h4> Dare To Challenge </h4>
-          
-          <ul>
-            <li style="display:inline"><a id="start-showdown-btn" href="">Create Showdown</a></li>
-            <li style="display:inline"><a id="join-showdown-btn" href="">Join A Showdown</a></li>
-          </ul>
-      
-      </center>
+        <h4> Dare To Challenge </h4>
+        
+        <ul>
+          <li style="display:inline"><button id="start-showdown-btn">Create Showdown</button></li>
+          <li style="display:inline"><button id="join-showdown-btn">Join A Showdown</button></li>
+        </ul>
     </div>
 
     <!--List of ongoing showdowns-->
@@ -62,15 +50,52 @@
       </ul>
     </div>
 
-    <!--FOOTER-->
-    <footer>
+
+    <!-- The Create showdown Modal -->
+    <div id="CreateDialog" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Start A Showdown</h2>
+            </div>
+            <div class="modal-body">
+                <p>Match name</p>
+                <input >
+                <button>START</button>
+            </div>
+      </div>
+
+    </div> 
+
+    <!-- The Join showdown Modal -->
+    <div id="JoinDialog" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Join A Showdown</h2>
+            </div>
+            <div class="modal-body">
+              <p>Showdown ID</p>
+              <input >
+              <button>JOIN</button>
+            </div>
+      </div>
+
+    </div> 
+
+     <!--FOOTER-->
+     <footer>
       <p>2019 <br> Campion College Software Engineering Club</p>
     </footer>
 
     <!--bootstrap and JQuery JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
-    <script src="JS/index_script.js"></script>
+    
     <script type="text/javascript">
       function scrollTo(id) {
         $('html, body').animate({
@@ -100,7 +125,7 @@
       firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src = "app.js">
-    </script>
+    <script src = "app.js"></script>
+    <script src="JS/index_script.js"></script>
   </body>
 </html>
